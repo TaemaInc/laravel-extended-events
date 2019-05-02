@@ -5,13 +5,19 @@ Adds two new key events to the Laravel ecosystem
 
 `\Taema\LaravelExtendedEvents\Events\JobFailedEvent` is dispatched when a job fails. The job needs to use the trait `Taema\LaravelExtendedEvents\Behavior\InteractsWithQueue` instead of the one provided by Laravel. This enables a way to react to all jobs in the project (Logging or reporting via Sentry for example).
 
+### Event Attributes
+
 | PRoperty | Type | Description |
 |----------|------|-------------|
 | $exception| \Exception | The caught exception during the job execution |
 
 ## AuthorizationFailedEvent
 
-`\Taema\LaravelExtendedEvents\Events\AuthorizationFailedEvent` is dispatched when a Gate or Policy fails in Laravel. This will help debugging where a 403 comes from. This event has the following attributes
+`\Taema\LaravelExtendedEvents\Events\AuthorizationFailedEvent` is dispatched when a Gate or Policy fails in Laravel. This will help debugging where a 403 comes from.
+
+The package will replace the `Illuminate\Auth\Access\Gate` with `Taema\LaravelExtendedEvents\Services\Gate`
+
+### Event Attributes
 
 | Property | Type | Description |
 |----------|------|-------------|
