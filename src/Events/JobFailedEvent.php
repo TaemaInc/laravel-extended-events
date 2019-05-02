@@ -11,7 +11,7 @@ class JobFailedEvent
     /**
      * @var \Exception
      */
-    private $exception;
+    public $exception;
 
     public function __construct(\Exception $exception)
     {

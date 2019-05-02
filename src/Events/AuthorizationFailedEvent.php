@@ -11,15 +11,15 @@ class AuthorizationFailedEvent
     /**
      * @var string
      */
-    private $ability;
+    public $ability;
     /**
      * @var array
      */
-    private $arguments;
+    public $arguments;
     /**
      * @var null
      */
-    private $user;
+    public $user;
 
     public function __construct(string $ability, array $arguments = [], $user = null)
     {
