@@ -1,0 +1,33 @@
+{
+    "name": "taema/laravel-extended-events",
+    "description": "Adds a few key events to the Laravel ecosystem",
+    "type": "library",
+    "authors": [
+        {
+            "name": "lunfel",
+            "email": "mathieu.tanguay@taema.ca"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Taema\\LaravelExtendEvents\\": "src/"
+      }
+    },
+    "require": {
+        "illuminate/auth": "^5.7",
+        "illuminate/events": "^5.7",
+        "illuminate/container": "^5.7",
+        "illuminate/support": "^5.7"
+    },
+    "extra": {
+      "branch-alias": {
+        "dev-master": "1.0-dev"
+      },
+      "laravel": {
+        "providers": [
+          "Taema\\LaravelExtendedEvents\\Providers\\ServiceProvider"
+        ]
+      }
+    },
+   "minimum-stability": "dev"
+}
