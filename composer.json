@@ -20,14 +20,10 @@
         "illuminate/support": "^6.0"
     },
     "extra": {
-      "branch-alias": {
-        "dev-master": "6.0-dev"
-      },
       "laravel": {
         "providers": [
           "Taema\\LaravelExtendedEvents\\Providers\\ServiceProvider"
         ]
       }
-    },
-   "minimum-stability": "dev"
+    }
 }
