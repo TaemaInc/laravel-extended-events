@@ -14,10 +14,10 @@
       }
     },
     "require": {
-        "illuminate/auth": "^7.0",
-        "illuminate/events": "^7.0",
-        "illuminate/container": "^7.0",
-        "illuminate/support": "^7.0"
+        "illuminate/auth": "^8.0",
+        "illuminate/events": "^8.0",
+        "illuminate/container": "^8.0",
+        "illuminate/support": "^8.0"
     },
     "extra": {
       "laravel": {
